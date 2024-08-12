@@ -4,6 +4,8 @@
   "main": "script.js",
   "type": "module",
   "scripts": {
+    "start": "node app.js",       // For production (used by Vercel)
+    "dev": "nodemon app.js",     // For local development
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +15,8 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
