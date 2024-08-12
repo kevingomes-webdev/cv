@@ -4,21 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="./Assets/Svg/favicon-logo.svg">
+    <link rel="icon" type="image/x-icon" href="../Assets/Svg/favicon-logo.svg">
     <title>CV - Kevin Gomes</title>
-    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="decoration.css">
 </head>
 <body>
     <header>
+        <div class="header-wrapper">
+            <div class="header-container">
+                <a href="#hero"><img src="../Assets/Svg/personal-logo.svg" alt="personal logo"></a>
+            </div>
+
+            <div class="header-container">
+                <ul class="dropdown-menu">
+                    <li><a href="fr.html">Service 1</a></li>
+                    <li><a href="de.html">Service 2</a></li>
+                </ul>
+
+                <div class="menu-toggle">☰ Menu</div>
+            </div>
+        </div>
 
     </header>
 
+    
+    <nav class="off-canvas-menu">
+        <button class="close-btn">&times;</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
+        <section id="hero">
+            <div class="wrapper">
+                <div class="container">
+                    <img src="../Assets/Img/cv-image.png" alt="Portait Image">
+                </div>
+
+                <div class="container">
+                    <h1>
+                        <span>Aspiring</span>
+                        <span>Business</span>
+                        <span>Professional</span>
+                    </h1>
+                    <h4>High School Graduate in Commerce and Administration</h4>
+                    <p>
+                    Welcome to my professional resume website! My name is Kevin 
+                    Gomes Pardal Antunes and I recently graduated from "Lycée 
+                    Technique d'Ettelbruck" with a focus on Commerce and Administration.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="education">
+
+        </section>
         
+        <section id="experience">
+
+        </section>
+
+        <section id="skills">
+
+        </section>
     </main>
 
     <footer>
-        <p>Copyright &#169; - <span id="date"></span></p>
+        <p>Copyright &#169; - <span id="date"></span> | Kevin Gomes</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>

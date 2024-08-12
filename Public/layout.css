@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper {
+    padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    .wrapper {
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}

@@ -1,0 +1,17 @@
+html {
+    scrollbar-color: white black;
+    scrollbar-width: thin;
+}
+
+/**Selection****/
+
+::selection {
+    background-color: white; /* Background color of selected text */
+    color: black; /* Text color of selected text */
+}
+  
+/* For Mozilla Firefox */
+::-moz-selection {
+    background-color: white; /* Background color of selected text */
+    color: black; /* Text color of selected text */
+}
