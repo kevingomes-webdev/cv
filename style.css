@@ -59,7 +59,7 @@ h3 {
 }
 
 .flexbox-flag a {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: rgb(80, 80, 80);
     border: 2px solid white;
     border-radius: 15%;
@@ -72,18 +72,25 @@ h3 {
 }
 
 .flexbox-flag img:hover, .flexbox-flag img:checked {
-    filter: grayscale(50%);
+    filter: grayscale(0%);
 }
 
 @media (min-width: 600px) {
 
-    h1 { font-size: 1.2rem; }
+    h1 { font-size: 5.2rem; }
     h2 { font-size: 1.2rem; }
     h3 { font-size: 1rem; }
 
     .flexbox-flag {
-        display: flex;
         gap: 1rem;
+    }
+
+    .flexbox-flag img {
+        width: 2.5rem;
+    }
+
+    .flexbox-flag a {
+        padding: 0.7rem;
     }
 
 }
