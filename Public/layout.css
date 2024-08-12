@@ -9,12 +9,15 @@ section {
     justify-content: center;
 }
 
-
+.wrapper {
+    max-width: 800px;
+    padding: 1rem;
+}
 
 @media (min-width: 600px) {
-    .wrapper {
-        max-width: 800px;
+    .two-columns {
         display: grid;
+        align-items: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
