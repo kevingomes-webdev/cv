@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/', (req, res) => {
-  res.render("pages/index");
+  res.render("pages/index.ejs");
 });
 
 app.listen(port, () => {
