@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --font-family: "Manrope", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: black;
+    user-select: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Title**/
+
+h1 { color: #696969;}
+
+h2, h3 {
+    color: white;
+}
+
+h1 { font-size: 1.2rem; }
+h2 { font-size: 1.2rem; }
+
+h3 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+
+
+/**Content***/
+
+.wrapper {
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.container {
+    margin-bottom: 2rem;
+}
+
+.flexbox-flag {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.flexbox-flag a {
+    padding: 0.5rem;
+    background-color: rgb(80, 80, 80);
+    border: 2px solid white;
+    border-radius: 15%;
+}
+
+.flexbox-flag img {
+    width: 2rem;
+    filter: grayscale(100%);
+    border-radius: 15%;
+}
+
+.flexbox-flag img:hover, .flexbox-flag img:checked {
+    filter: grayscale(0%);
+}
+
+@media (min-width: 600px) {
+
+    h1 { font-size: 1.4rem; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.2rem; }
+
+    .flexbox-flag {
+        gap: 1rem;
+    }
+
+    .flexbox-flag img {
+        width: 2.5rem;
+    }
+
+    .flexbox-flag a {
+        padding: 0.7rem;
+    }
+
+}
