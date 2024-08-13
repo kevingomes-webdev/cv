@@ -21,7 +21,7 @@ section {
 @media (min-width: 600px) {
     .two-columns {
         display: grid;
-        align-items: center;
+        align-items: stretch;
         margin: 2rem 0;
         gap: 2rem;
         grid-template-columns: 1fr 1fr;

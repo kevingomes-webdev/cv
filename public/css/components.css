@@ -172,6 +172,7 @@ span { display: block; }
 .flex-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .gray-1 { color: #595959;}
