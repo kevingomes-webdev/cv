@@ -14,6 +14,10 @@ section {
     padding: 1rem;
 }
 
+.two-columns {
+    margin: 2rem 0;
+}
+
 @media (min-width: 600px) {
     .two-columns {
         display: grid;
