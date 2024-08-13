@@ -1,5 +1,11 @@
 /** Header *****/
 
+header {
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+}
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -10,6 +16,11 @@
 .header-wrapper li {
     list-style-type: none;
     text-decoration: none;
+}
+
+.header-container {
+    background-color: black;
+    padding: 1rem;
 }
 
 /** Language Dropdown ****/
@@ -115,10 +126,30 @@
     left: 0;
 }
 
+/** Buttons***/
+
+.btn-link {
+    border: 2px solid white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: inherit;
+    color: white;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.btn-link:hover {
+    background-color: white;
+    color: black;
+}
+
 /** Hero Section****/
 .two-columns img {
     width: 80%;
 }
+
+span { display: block; }
 
 /** Personal Goal Section ***/
 

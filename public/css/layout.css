@@ -18,6 +18,7 @@ section {
     .two-columns {
         display: grid;
         align-items: center;
+        gap: 2rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
