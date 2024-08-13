@@ -169,9 +169,24 @@ span { display: block; }
 /** Personal Goal Section ***/
 
 .column-box ul {
-    padding-left: 1.1rem;
-    text-indent: -1.1rem;
-    list-style: url("/assets/svg/circle-bullet.svg");
+    list-style: none;
+    padding-left: 0;
+}
+
+.column-box li {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.column-box li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 30px; /* Set the width of the custom bullet */
+    height: 30px; /* Set the height */
+    background-image: url("/assets/svg/circle-bullet.svg"); /* Path to your image or icon */
+    background-size: contain; /* Ensure it scales properly */
+    background-repeat: no-repeat;
 }
 
 /** Education Section ***/
