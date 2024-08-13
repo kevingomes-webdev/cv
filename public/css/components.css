@@ -129,19 +129,33 @@ header {
 /** Buttons***/
 
 .btn-link {
-    border: 2px solid white;
-    padding: 0.5rem;
-    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.btn-link a {
     text-decoration: none;
     font-family: inherit;
     color: white;
     font-weight: 900;
     transition: 0.5s;
+    text-transform: uppercase;
 }
 
-.btn-link:hover {
+.btn-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
     background-color: white;
-    color: black;
+    transition: width 0.4s ease-in-out;
+    z-index: 0;
+}
+
+.btn-link:hover::before {
+    width: 100%;
 }
 
 /** Hero Section****/
@@ -158,5 +172,7 @@ span { display: block; }
 .flex-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
+
+.gray-1 { color: #595959;}
+.white-2 { font-weight: 500;}
