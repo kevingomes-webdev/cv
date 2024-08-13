@@ -116,6 +116,16 @@
 }
 
 /** Hero Section****/
-#hero img {
+.two-columns img {
     width: 80%;
+}
+
+/** Personal Goal Section ***/
+
+
+/** Education Section ***/
+.flex-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
