@@ -4,7 +4,14 @@ $(document).ready(function() {
         var $content = $button.next(".accordion-content");
         var isOpen = $button.attr("aria-expanded") === "true";
 
-        $button.attr("aria-expanded", !isOpen);
-        $content.attr("hidden", isOpen);
+        // Close all accordion items
+        $(".accordion-header").attr("aria-expanded", false);
+        $(".accordion-content").attr("hidden", true);
+
+        // Open the clicked accordion item if it was not already open
+        if (!isOpen) {
+            $button.attr("aria-expanded", true);
+            $content.attr("hidden", false);
+        }
     });
 });
