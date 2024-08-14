@@ -15,3 +15,10 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    $('.progress').each(function() {
+        var percentage = $(this).data('percentage');
+        $(this).css('width', percentage + '%');
+    });
+});
