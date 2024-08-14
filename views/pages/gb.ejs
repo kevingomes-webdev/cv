@@ -3,24 +3,26 @@
 <%- include("../partials/navbar.ejs") %>
 
 <section id="hero">
-    <div class="wrapper two-columns">
-        <div class="container">
-            <img src="/assets/img/cv-image.png" alt="Portait Image">
-        </div>
-
-        <div class="container">
-            <h1>
-                <span>Aspiring</span>
-                <span>Business</span>
-                <span>Professional</span>
-            </h1>
-            <h5>High School Graduate in Commerce and Administration</h5>
-            <p>
-            My name is Kevin Gomes Pardal Antunes and I recently graduated from "Lycée 
-            Technique d'Ettelbruck" with a focus on Commerce and Administration.
-            </p>
-            <div class="btn-link">
-                <a href="assets/pdf/1GCC-élève-méritant.pdf" download="1GCC-élève-méritant.pdf" class="download-button">Download CV</a>
+    <div class="wrapper">
+        <div class="two-columns">
+            <div class="container">
+                <img src="/assets/img/cv-image.png" alt="Portait Image">
+            </div>
+    
+            <div class="container">
+                <h1>
+                    <span>Aspiring</span>
+                    <span>Business</span>
+                    <span>Professional</span>
+                </h1>
+                <h5>High School Graduate in Commerce and Administration</h5>
+                <p>
+                My name is Kevin Gomes Pardal Antunes and I recently graduated from "Lycée 
+                Technique d'Ettelbruck" with a focus on Commerce and Administration.
+                </p>
+                <div class="btn-link">
+                    <a href="assets/pdf/1GCC-élève-méritant.pdf" download="1GCC-élève-méritant.pdf" class="download-button">Download CV</a>
+                </div>
             </div>
         </div>
     </div>
@@ -654,35 +656,132 @@
 
                 <div class="column-list">
                     <div class="column-box">
-                        <span class="gray-1">Since 2024</span>
-                        <span class="white-2">Soft skills then different apps below with tooltip</span>
-                        <p>
-                            dd
-                        </p>
-                    </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header" aria-expanded="false">
+                                <div class="accordion-container">
+                                    <span class="gray-1">Since 2022</span>
+                                    <span class="white-2">Web Development</span>
+                                </div>
 
-                    <div class="column-box">
-                        <span class="gray-1">Since 2023</span>
-                        <span class="white-2">Web Development</span>
-                        <p>
-                            
-                        </p>
-                    </div>
+                                <div class="accordion-container">
+                                    <div class="progress-bar">
+                                        <div class="progress" data-percentage="80"></div>
+                                    </div>
+                                </div>
 
-                    <div class="column-box">
-                        <span class="gray-1">Since 2022</span>
-                        <span class="white-2">Physical Exercise</span>
-                        <p>
-                            
-                        </p>
-                    </div>
+                                <div class="accordion-container">
+                                    <img src="/assets/svg/plus-symbol-logo.svg" alt="">
+                                </div>
+                            </button>
 
-                    <div class="column-box">
-                        <span class="gray-1">Since 2018</span>
-                        <span class="white-2">Graphic Design</span>
-                        <p>
-                            
-                        </p>
+                            <div class="accordion-content" hidden>
+                                <ul class="skills-list">
+                                    <li>Developed static websites and basic web applications, emphasizing both functionality and aesthetically pleasing designs.</li>
+                                    <li>Applied knowledge of user experience (UX) principles to create intuitive interfaces, potentially valuable for creating client portals or internal financial dashboards.</li>
+                                    <li>Familiar with HTML, CSS, and JavaScript, enabling the development of web tools that can streamline financial operations or client interactions.</li>
+                                </ul>
+
+                                <span class="gray-1">Tech Stack</span>
+
+                                <div class="tech-list">
+                                    <div class="tooltip">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                                            <img src="/assets/svg/tech-stack/html-5.svg" alt="Html 5">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">HTML</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+                                            <img src="/assets/svg/tech-stack/css-3.svg" alt="Css 3">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">CSS</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                                            <img src="/assets/svg/tech-stack/javascript.svg" alt="Javascript">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">Javascript</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://jquery.com/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/jquery.svg" alt="jQuery">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">jQuery</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://gsap.com/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/gsap.svg" alt="GreenSock">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">GSAP</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://affinity.serif.com/en-us/designer/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/three-js.svg" alt="Three.js">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">Three.js</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://affinity.serif.com/en-us/designer/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/bootstrap.svg" alt="Bootstrap">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">Bootstrap</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://affinity.serif.com/en-us/designer/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/tailwind-css.svg" alt="Tailwind CSS">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">Tailwind CSS</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://affinity.serif.com/en-us/designer/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/npm.svg" alt="NPM">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">NPM</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://affinity.serif.com/en-us/designer/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/node-js.svg" alt="Node.js">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">Node.js</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://affinity.serif.com/en-us/designer/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/express-js.svg" alt="Express.js">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">Express.js</span>
+                                    </div>
+
+                                    <div class="tooltip">
+                                        <a href="https://affinity.serif.com/en-us/designer/" target="_blank">
+                                            <img src="/assets/svg/tech-stack/ejs.svg" alt="EJS">
+                                        </a>
+                                        
+                                        <span class="tooltiptext">EJS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -166,6 +166,9 @@ header {
 
 span { display: block; }
 
+#hero {
+    margin-top: 6rem;
+}
 
 /** Personal Goal Section ***/
 
@@ -218,8 +221,102 @@ span { display: block; }
 .title-1 { color: #595959;}
 .white-2 { font-weight: 500;}
 
+.accordion-item {
+    margin-bottom: 1rem;
+}
+
+.accordion-header {
+    all: unset;
+    background-color: black;
+    cursor: pointer;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.accordion-container img {
+    width: 1rem;
+}
+
+
+
 /** Experience ***/
 
 .exp-ul li::before {
     top: 0;
+}
+
+/** Skills Section *****/
+
+.skills-list li::before {
+    top: 0.2rem;
+    width: 15px;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 1rem;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 4px;
+    width: 0; /* Default width */
+    transition: width 0.3s; /* Smooth transition for width change */
+}
+
+
+.tech-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip img {
+    height: 3rem;
+    filter: grayscale(100%);
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 3px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: -50%;
+    left: 50%;
+    font-size: 0.9rem;
+    transform: translateX(-50%);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+@media (min-width: 600px) {
+    .tooltip img {
+        width: 4rem;
+    }
 }
