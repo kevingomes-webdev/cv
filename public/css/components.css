@@ -207,6 +207,7 @@ span { display: block; }
 .normal-link img:hover { color: rgb(167, 167, 167);}
 
 /** Education Section ***/
+
 .flex-title {
     display: flex;
     justify-content: space-between;
@@ -216,3 +217,9 @@ span { display: block; }
 .gray-1,
 .title-1 { color: #595959;}
 .white-2 { font-weight: 500;}
+
+/** Experience ***/
+
+.exp-ul li::before {
+    top: 0;
+}
