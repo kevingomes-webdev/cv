@@ -23,7 +23,7 @@ section {
         display: grid;
         align-items: stretch;
         margin: 2rem 0;
-        gap: 2rem;
+        gap: 2.5rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }

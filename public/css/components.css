@@ -327,4 +327,21 @@ span { display: block; }
     .tooltip img {
         width: 4rem;
     }
+
+    .in-touch img {
+        width: 8rem;
+    }
+}
+
+/***Contact Section ****/
+
+.in-touch {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.in-touch img {
+    width: 4rem;
 }
