@@ -189,7 +189,7 @@ span { display: block; }
     top: 1.4rem;
     width: 20px; /* Set the width of the custom bullet */
     height: 20px; /* Set the height */
-    background-image: url("/assets/svg/circle-bullet.svg"); /* Path to your image or icon */
+    background-image: url("/assets/svg/logos/circle-bullet.svg"); /* Path to your image or icon */
     background-size: contain; /* Ensure it scales properly */
     background-repeat: no-repeat;
 }
