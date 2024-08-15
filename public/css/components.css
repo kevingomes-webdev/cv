@@ -241,7 +241,6 @@ span { display: block; }
 .accordion-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .accordion-container img {
