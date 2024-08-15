@@ -18,8 +18,8 @@ app.get("/", (req, res) => {
   res.render("pages/index");
 });
 
-app.get("/gb", (req, res) => {
-    res.render("pages/gb");
+app.get("/en", (req, res) => {
+    res.render("pages/en");
 });
 
 app.get("/fr", (req, res) => {

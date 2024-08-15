@@ -22,6 +22,7 @@ body {
 
 img {
     user-select: none;
+    filter: grayscale(100%);
 }
 
 /***Fonts******/
