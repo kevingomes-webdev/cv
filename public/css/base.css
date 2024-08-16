@@ -26,8 +26,26 @@ img {
 }
 
 /***Fonts******/
-h1 { font-weight: 900;}
+h1 { font-weight: 800;}
 h4 { font-weight: 500;}
 p {
     font-weight: 200;
+    font-size: 0.8rem;
+}
+
+/***Spacing ****/
+
+.flex-title {
+    margin: 2rem 0;
+}
+
+
+@media (min-width: 600px) {
+    /*** Text *********/
+
+    /*** Spacing ******/
+    .flex-title {
+        margin: 4rem 0;
+    }
+    
 }

@@ -7,6 +7,7 @@ main {
 section {
     display: flex;
     justify-content: center;
+    scroll-margin-top: 4rem;
 }
 
 .wrapper {
@@ -27,4 +28,5 @@ section {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
+
 }
