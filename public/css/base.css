@@ -52,7 +52,8 @@ h5 {
     line-height: 1.2;
 }
 p,
-.accordion-content {
+.accordion-content,
+.exp-ul li {
     font-weight: 200;
     font-size: 0.85rem;
 }
