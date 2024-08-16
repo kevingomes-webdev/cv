@@ -30,6 +30,10 @@ app.get("/de", (req, res) => {
     res.render("pages/de");
 });
 
+app.get("/terms", (req, res) => {
+  res.render("pages/terms");
+});
+
 /**Server */
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

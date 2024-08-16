@@ -24,6 +24,11 @@ header {
     padding: 1rem;
 }
 
+.cv-logo {
+    font-weight: 900;
+    color: #595959;
+}
+
 /** Language Dropdown ****/
 
 .navbar {
@@ -327,10 +332,6 @@ span { display: block; }
     .tooltip img {
         width: 4rem;
     }
-
-    .in-touch img {
-        width: 8rem;
-    }
 }
 
 /***Contact Section ****/
@@ -339,9 +340,19 @@ span { display: block; }
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .in-touch img {
-    width: 4rem;
+    height: 4rem;
 }
+
+@media (min-width: 600px) {
+    .in-touch img {
+        height: 6rem;
+    }
+}
+
+
+/*** Footer Section ********/
+
