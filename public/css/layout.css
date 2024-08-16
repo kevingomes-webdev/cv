@@ -21,16 +21,25 @@ section {
     justify-content: center;
 }
 
-
 .center > img {
-    max-width: 80%;
-    object-fit: contain;
-    margin: 3rem 0; /* Ensures the image scales while maintaining aspect ratio */
+    max-width: 85%;
 }
 
+.logo-svg {
+    width: 50%;
+    margin-bottom: 1rem;
+}
 
 .two-columns {
     margin: 2rem 0;
+}
+
+@media (min-width: 450px) {
+    .center > img {
+        max-width: 60%;
+        object-fit: contain;
+        margin: 3rem 0; /* Ensures the image scales while maintaining aspect ratio */
+    }
 }
 
 @media (min-width: 600px) {
