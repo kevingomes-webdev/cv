@@ -89,7 +89,7 @@ header {
 .visible {
     opacity: 1;
     visibility: visible;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .off-canvas-menu {

@@ -11,7 +11,7 @@ section {
 }
 
 .wrapper {
-    max-width: 800px;
+    max-width: 900px;
     padding: 1rem;
 }
 
@@ -26,23 +26,28 @@ section {
 }
 
 .logo-svg {
-    width: 50%;
+    max-height: 4rem;
     margin-bottom: 1rem;
 }
+
 
 .two-columns {
     margin: 2rem 0;
 }
 
 @media (min-width: 450px) {
+
     .center > img {
-        max-width: 60%;
+        max-width: 50%;
         object-fit: contain;
         margin: 3rem 0; /* Ensures the image scales while maintaining aspect ratio */
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+
+    
+
     .center > img {
         max-width: 80%; /* Limits the maximum width */
         max-height: 80%; /* Limits the maximum height */
