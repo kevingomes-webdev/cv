@@ -17,20 +17,11 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.progress').each(function() {
-        var percentage = $(this).data('percentage');
-        $(this).css('width', percentage + '%');
-    });
-});
-
-$(document).ready(function() {
     $(".open-btn").on("click", function() {
-        $("#offCanvas").removeClass(".visibility-none");
-        $("#offCanvas").addClass(".visibility");
+        $(".overlay").addClass("visible");
     });
 
-    $(".close-btn").on("click", function() {
-        $("#offCanvas").removeClass(".visibility");
-        $("#offCanvas").addClass(".visibility-none");
+    $(".off-canvas-menu a").on("click", function() {
+        $(".overlay").removeClass("visible");
     });
 });
