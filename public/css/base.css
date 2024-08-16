@@ -26,14 +26,34 @@ img {
 }
 
 /***Fonts******/
-h1 { font-weight: 800;}
-h4 { font-weight: 500;}
+h1,
+h2,
+h3 { font-weight: 800;}
+
+h1 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+
+
+h5 {
+    color: #595959;
+}
 p {
     font-weight: 200;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 /***Spacing ****/
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 .flex-title {
     margin: 2rem 0;

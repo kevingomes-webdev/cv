@@ -15,11 +15,31 @@ section {
     padding: 1rem;
 }
 
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.center > img {
+    max-width: 80%;
+    object-fit: contain;
+    margin: 3rem 0; /* Ensures the image scales while maintaining aspect ratio */
+}
+
+
 .two-columns {
     margin: 2rem 0;
 }
 
 @media (min-width: 600px) {
+    .center > img {
+        max-width: 80%; /* Limits the maximum width */
+        max-height: 80%; /* Limits the maximum height */
+        object-fit: contain; /* Ensures the image scales while maintaining aspect ratio */
+    }
+
     .two-columns {
         display: grid;
         align-items: stretch;

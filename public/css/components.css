@@ -98,60 +98,7 @@ header {
     
 }
 
-
-/**
-.off-canvas-menu {
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    color: white;
-    transition: 0.3s;
-    padding-top: 60px;
-}
-
-.off-canvas-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.off-canvas-menu li {
-    padding: 10px;
-}
-
-.off-canvas-menu a {
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-
-.off-canvas-menu a:hover {
-    background-color: #575757;
-}
-
-.off-canvas-menu .close-btn {
-    font-size: 36px;
-    border: none;
-    background: none;
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.off-canvas-menu.active {
-    left: 0;
-    overflow-y: auto;
-}
-**/
-
 /** Hero Section****/
-.two-columns img {
-    width: 80%;
-}
 
 span { display: block; }
 
