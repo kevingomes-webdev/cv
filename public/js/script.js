@@ -22,3 +22,15 @@ $(document).ready(function() {
         $(this).css('width', percentage + '%');
     });
 });
+
+$(document).ready(function() {
+    $(".open-btn").on("click", function() {
+        $("#offCanvas").removeClass(".visibility-none");
+        $("#offCanvas").addClass(".visibility");
+    });
+
+    $(".close-btn").on("click", function() {
+        $("#offCanvas").removeClass(".visibility");
+        $("#offCanvas").addClass(".visibility-none");
+    });
+});

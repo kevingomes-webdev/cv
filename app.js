@@ -19,15 +19,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/en", (req, res) => {
-    res.render("pages/en");
+  res.render("pages/en");
 });
 
 app.get("/fr", (req, res) => {
-    res.render("pages/fr");
+  res.render("pages/fr");
 });
 
 app.get("/de", (req, res) => {
-    res.render("pages/de");
+  res.render("pages/de");
 });
 
 app.get("/terms", (req, res) => {

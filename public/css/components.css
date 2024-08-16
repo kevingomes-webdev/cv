@@ -27,36 +27,16 @@ header {
 .cv-logo {
     font-weight: 900;
     color: #595959;
+    text-decoration: none;
+}
+
+.open-btn {
+    cursor: pointer;
 }
 
 /** Language Dropdown ****/
 
-.navbar {
-    background-color: #333;
-    padding: 10px;
-}
 
-.nav-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-item {
-    display: inline-block;
-    position: relative;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.nav-link:hover {
-    background-color: #575757;
-}
 
 /* Dropdown menu styling */
 .dropdown-menu {
@@ -83,6 +63,20 @@ header {
 }
 
 /** OffCanvas Menu****/
+
+
+#offCanvas {
+    width: 100vw;
+    height: 100vh;
+    background-color: rebeccapurple;
+    position: fixed;
+    z-index: 10;
+}
+
+.visibility { visibility: visible; }
+
+.visibility-none { visibility: none; }
+
 /**
 .off-canvas-menu {
     top: 0;
@@ -356,3 +350,10 @@ span { display: block; }
 
 /*** Footer Section ********/
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
