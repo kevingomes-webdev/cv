@@ -8,10 +8,23 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3000;
 
+let userIsAuthorised = false;
+
 /**Middleware */
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+
+
+function passwordCheck(req, res, next) {
+  const password = req.body["password"];
+  if (password === "cv-kg") {
+    userIsAuthorised = true;
+  }
+  next();
+}
+
+app.use(passwordCheck);
 
 /**Routes */
 app.get("/", (req, res) => {

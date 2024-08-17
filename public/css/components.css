@@ -28,7 +28,8 @@ header {
     font-weight: 900;
     color: #595959;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 3rem;
+    z-index: 5;
 }
 
 
@@ -38,6 +39,7 @@ header {
     width: 1.2rem;
     display: flex;
     align-items: center;
+    z-index: 5;
 }
 
 
@@ -338,12 +340,12 @@ span { display: block; }
 }
 
 .in-touch img {
-    height: 4rem;
+    height: 3rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     .in-touch img {
-        height: 6rem;
+        height: 5rem;
     }
 }
 
