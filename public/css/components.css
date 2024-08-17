@@ -28,36 +28,77 @@ header {
     font-weight: 900;
     color: #595959;
     text-decoration: none;
+    font-size: 1.2rem;
 }
+
+
+.open-btn,
+.language-btn,
+.close-btn {
+    width: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+@media (min-width: 650px) {
+    .cv-logo {
+        font-size: 1.5rem;
+    }
+    
+    .open-btn,
+    .language-btn,
+    .close-btn {
+        width: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.open-btn,
+.close-btn,
+.language-btn {
+    cursor: pointer;
+}
+
+
 
 /** Language Dropdown ****/
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-
-/* Dropdown menu styling */
-.dropdown-menu {
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
-    min-width: 160px;
+    background-color: #000000;
+    padding: 1rem;
     z-index: 1;
+    left: 50%; /* Positioning to the center of the dropdown */
+  transform: translateX(-50%); /* Adjusting to center */
 }
 
-.dropdown-item {
-    color: white;
+.dropdown-content a,
+.dropdown-content li {
+    list-style-type: none;
     text-decoration: none;
+    color: white;
+}
+
+.dropdown-content li {
+    display: flex;
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-    padding: 10px 15px;
 }
-
-.dropdown-item:hover {
-    background-color: #575757;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
 /** OffCanvas Menu****/
 
 .overlay {
@@ -76,14 +117,35 @@ header {
     justify-content: center;
 }
 
+.off-canvas-background {
+    display: flex;
+    justify-content: center;
+}
+
 .off-canvas-menu {
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    z-index: 10;
 }
 
-.open-btn {
-    cursor: pointer;
+.off-canvas-menu a {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.off-canvas-menu a:hover {
+    color: #595959;
+}
+
+.off-canvas-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .visible {
@@ -92,11 +154,6 @@ header {
     transition: 0.3s;
 }
 
-.off-canvas-menu {
-    z-index: 10;
-    padding: 1rem;
-    
-}
 
 /** Hero Section****/
 
@@ -194,6 +251,11 @@ span { display: block; }
 }
 
 /** Skills Section *****/
+
+.skills-list li,
+.exp-ul li {
+    margin: 0.7rem 0;
+}
 
 .skills-list li::before {
     top: 0.2rem;

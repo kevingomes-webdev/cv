@@ -15,6 +15,14 @@ section {
     padding: 1rem;
 }
 
+#terms { margin-top: 4rem;}
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .center {
     display: flex;
     flex-direction: column;
@@ -22,7 +30,8 @@ section {
 }
 
 .center > img {
-    max-width: 85%;
+    max-width: 65%;
+    margin: 3rem 0;
 }
 
 .logo-svg {
@@ -45,8 +54,6 @@ section {
 }
 
 @media (min-width: 650px) {
-
-    
 
     .center > img {
         max-width: 80%; /* Limits the maximum width */

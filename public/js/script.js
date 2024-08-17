@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     $(".accordion-header").on("click", function() {
         var $button = $(this);
@@ -24,4 +26,12 @@ $(document).ready(function() {
     $(".off-canvas-menu a").on("click", function() {
         $(".overlay").removeClass("visible");
     });
+
+    $(".close-btn").on("click", function() {
+        $(".overlay").removeClass("visible");
+    });
+
+    $(".language-btn").click(function() {
+        $(this).next(".dropdown-content").toggle();
+      });
 });
