@@ -23,7 +23,7 @@ header {
     background-color: black;
     padding: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .cv-logo {
@@ -315,11 +315,21 @@ span { display: block; }
 
 .in-touch img {
     height: 3rem;
+    margin: 2rem 0;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 600px) {
+
+    .in-touch {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3rem;
+    }
+
     .in-touch img {
         height: 5rem;
+        margin: 3rem 0;
     }
 }
 

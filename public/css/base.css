@@ -70,6 +70,13 @@ h5 {
     font-size: 0.95rem;
 }
 
+.gray-2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #595959;
+    font-weight: 500;
+}
+
 .white-2 {
     font-weight: 600;
 }
