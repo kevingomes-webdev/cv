@@ -17,7 +17,7 @@ app.set("views", path.join(__dirname, "views"));
 
 
 function passwordCheck(req, res, next) {
-  const password = req.body["password"];
+  const password = req.body["passwordName"];
   if (password === "cv-kg") {
     userIsAuthorised = true;
   }
@@ -49,6 +49,17 @@ app.get("/terms", (req, res) => {
 
 app.get("/check", (req, res) => {
   res.render("pages/check");
+});
+
+app.post("/check", (req, res) => {
+  if (userIsAuthorised) {
+    // If password is correct, download the CV
+    const filePath = path.join(__dirname, "public", "assets", "pdf", );
+    res.download(filePath, 'cv.pdf');
+  } else {
+    // If password is incorrect, reload the page with an error message
+    res.render("/check", { error: 'Incorrect password. Please try again.' });
+  }
 });
 
 /**Server */
