@@ -24,6 +24,7 @@ function passwordCheck(req, res, next) {
   next();
 }
 
+app.use(passwordCheck);
 
 /**Routes */
 app.get("/", (req, res) => {
@@ -44,6 +45,10 @@ app.get("/de", (req, res) => {
 
 app.get("/terms", (req, res) => {
   res.render("pages/terms");
+});
+
+app.get("/check", (req, res) => {
+  res.render("pages/check");
 });
 
 /**Server */
