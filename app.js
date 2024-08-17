@@ -24,7 +24,6 @@ function passwordCheck(req, res, next) {
   next();
 }
 
-app.use(passwordCheck);
 
 /**Routes */
 app.get("/", (req, res) => {
