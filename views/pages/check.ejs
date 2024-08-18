@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/x-icon" href="/assets/svg/logos/favicon-logo.svg">
     <title>CV - Kevin Gomes</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/check.css">
 </head>
 
 <body>
@@ -29,10 +29,16 @@
 
                 <div class="container">
                     <form action="/check" method="POST">
-                        <input type="password" name="passwordName">
-                        <input type="submit" value="OK">
+                        <label for="passwordName"></label>
+                        <input type="password" id="passwordName" name="passwordName" required>
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
+                <% if (locals.error) { %>
+                    <div class="error-message">
+                      <p><%= error %></p>
+                    </div>
+                  <% } %>
             </div>
         </section>
     </main>

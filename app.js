@@ -15,6 +15,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());  // Add this line
+
 
 function passwordCheck(req, res, next) {
   const password = req.body["passwordName"];
@@ -48,17 +51,20 @@ app.get("/terms", (req, res) => {
 });
 
 app.get("/check", (req, res) => {
-  res.render("pages/check");
+  res.render("pages/check", { error: null });
 });
 
 app.post("/check", (req, res) => {
+  console.log("POST /check triggered");
   if (userIsAuthorised) {
+    console.log("Request body:", req.body);
     // If password is correct, download the CV
-    const filePath = path.join(__dirname, "public", "assets", "pdf", );
-    res.download(filePath, 'cv.pdf');
+    const filePath = path.join(__dirname, "/public", "/assets", "/pdf", "/CV-2024-fr");
+    res.download(filePath, "CV-2024-fr");
   } else {
+    console.log("Authorization failed.");
     // If password is incorrect, reload the page with an error message
-    res.render("/check", { error: 'Incorrect password. Please try again.' });
+    res.render("pages/check", { error: "Incorrect password. Please try again." });
   }
 });
 
