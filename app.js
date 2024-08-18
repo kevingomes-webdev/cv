@@ -59,8 +59,8 @@ app.post("/check", (req, res) => {
   if (userIsAuthorised) {
     console.log("Request body:", req.body);
     // If password is correct, download the CV
-    const filePath = path.join(__dirname, "/public", "/assets", "/pdf", "/CV-2024-fr");
-    res.download(filePath, "CV-2024-fr");
+    const filePath = path.join(__dirname, "public", "assets", "pdf", "CV-2024-fr.pdf");
+    res.download(filePath, "CV-2024-fr.pdf");
   } else {
     console.log("Authorization failed.");
     // If password is incorrect, reload the page with an error message
