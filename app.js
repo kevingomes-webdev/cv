@@ -21,7 +21,7 @@ app.use(express.json());  // Add this line
 
 function passwordCheck(req, res, next) {
   const password = req.body["passwordName"];
-  if (password === "cv-kg") {
+  if (password === "finance") {
     userIsAuthorised = true;
   }
   next();
@@ -51,16 +51,34 @@ app.get("/terms", (req, res) => {
 });
 
 app.get("/check", (req, res) => {
-  res.render("pages/check", { error: null });
+  const language = req.query.lang || 'en'; // Default to English if no language is specified
+  res.render("pages/check", { error: null, language });
 });
 
 app.post("/check", (req, res) => {
   console.log("POST /check triggered");
+
   if (userIsAuthorised) {
     console.log("Request body:", req.body);
+
+    let fileName;
+    switch (language) {
+      case 'en':
+        fileName = "CV-2024-en.pdf";
+        break;
+      case 'fr':
+        fileName = "CV-2024-fr.pdf";
+        break;
+      case 'de':
+        fileName = "CV-2024-de.pdf";
+        break;
+      default:
+        fileName = "CV-2024-en.pdf"; // Default to English if language is unknown
+    }
+
     // If password is correct, download the CV
-    const filePath = path.join(__dirname, "public", "assets", "pdf", "CV-2024-fr.pdf");
-    res.download(filePath, "CV-2024-fr.pdf");
+    const filePath = path.join(__dirname, "public", "assets", "pdf", fileName);
+    res.download(filePath, fileName);
   } else {
     console.log("Authorization failed.");
     // If password is incorrect, reload the page with an error message
