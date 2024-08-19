@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="/assets/svg/logos/favicon-logo.svg">
+    <title>CV - Kevin Gomes</title>
+    <link rel="stylesheet" type="text/css" href="/css/check.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <a href="/de" class="header-container cv-logo">
+                CV
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="wrapper">
+                <div class="container">
+                    <h1>Curriculum Vitae</h1>
+                    <h2>Kevin Gomes Pardal Antunes</h2>
+                    <h3>Passwort</h3>
+                </div>
+
+                <div class="container">
+                    <form action="/check-de" method="POST">
+                        <label for="passwordName">Bitte geben Sie das auf dem Lebenslauf angezeigte Passwort ein</label>
+                        <input type="password" id="passwordName" name="passwordName" required>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <% if (locals.error) { %>
+                    <div class="error-message">
+                      <p><%= error %></p>
+                    </div>
+                  <% } %>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

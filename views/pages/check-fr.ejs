@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header-wrapper">
-            <a href="/en" class="header-container cv-logo">
+            <a href="/fr" class="header-container cv-logo">
                 CV
             </a>
         </div>
@@ -24,11 +24,12 @@
                 <div class="container">
                     <h1>Curriculum Vitae</h1>
                     <h2>Kevin Gomes Pardal Antunes</h2>
-                    <h3>Password | Mot de passe | Passwort</h3>
+                    <h3>Mot de passe</h3>
                 </div>
 
                 <div class="container">
-                    <form action="/check" method="POST">
+                    <form action="/check-fr" method="POST">
+                        <label for="passwordName">Veuillez saisir le mot de passe affiché sur le CV</label>
                         <input type="password" id="passwordName" name="passwordName" required>
                         <input type="submit" value="Submit">
                     </form>

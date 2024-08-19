@@ -50,13 +50,33 @@ app.get("/terms", (req, res) => {
   res.render("pages/terms");
 });
 
-app.get("/check", (req, res) => {
-  const language = req.query.lang || 'en'; // Default to English if no language is specified
-  res.render("pages/check", { error: null, language });
+app.get("/check-en", (req, res) => {
+  res.render("pages/check-en", { error: null });
 });
 
-app.post("/check", (req, res) => {
-  console.log("POST /check triggered");
+app.get("/check-fr", (req, res) => {
+  res.render("pages/check-fr", { error: null });
+});
+
+app.get("/check-de", (req, res) => {
+  res.render("pages/check-de", { error: null });
+});
+
+app.post("/check-en", (req, res) => {
+  handleFileDownload(req, res, 'en');
+});
+
+app.post("/check-fr", (req, res) => {
+  handleFileDownload(req, res, 'fr');
+});
+
+app.post("/check-de", (req, res) => {
+  handleFileDownload(req, res, 'de');
+});
+
+/** Function to handle file download based on language */
+function handleFileDownload(req, res, language) {
+  console.log(`POST /check-${language} triggered`);
 
   if (userIsAuthorised) {
     console.log("Request body:", req.body);
@@ -73,18 +93,23 @@ app.post("/check", (req, res) => {
         fileName = "CV-2024-de.pdf";
         break;
       default:
-        fileName = "CV-2024-en.pdf"; // Default to English if language is unknown
+        fileName = "CV-2024-en.pdf"; // Default to English
     }
 
-    // If password is correct, download the CV
     const filePath = path.join(__dirname, "public", "assets", "pdf", fileName);
-    res.download(filePath, fileName);
+
+    res.download(filePath, fileName, (err) => {
+      if (err) {
+        console.error("Error during file download:", err);
+        res.status(500).send("Internal Server Error - Could not download the file.");
+      }
+    });
+
   } else {
     console.log("Authorization failed.");
-    // If password is incorrect, reload the page with an error message
-    res.render("pages/check", { error: "Incorrect password. Please try again." });
+    res.render(`pages/check-${language}`, { error: "Incorrect password. Please try again." });
   }
-});
+}
 
 /**Server */
 app.listen(port, () => {
