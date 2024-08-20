@@ -21,7 +21,7 @@ app.use(express.json());  // Add this line
 
 function passwordCheck(req, res, next) {
   const password = req.body["passwordName"];
-  if (password === "finance") {
+  if (password === "kg-cv") {
     userIsAuthorised = true;
   }
   next();
