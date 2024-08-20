@@ -46,8 +46,16 @@ app.get("/de", (req, res) => {
   res.render("pages/de");
 });
 
-app.get("/terms", (req, res) => {
-  res.render("pages/terms");
+app.get("/terms-en", (req, res) => {
+  res.render("pages/terms-en");
+});
+
+app.get("/terms-fr", (req, res) => {
+  res.render("pages/terms-fr");
+});
+
+app.get("/terms-de", (req, res) => {
+  res.render("pages/terms-de");
 });
 
 app.get("/check-en", (req, res) => {
