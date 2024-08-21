@@ -269,8 +269,7 @@ span {
     align-items: center;
     align-content: center;
     gap: var(--spacing-small);
-    margin-top: var(--spacing-xlarge);
-    margin-bottom: var(--spacing-xlarge);
+    margin: var(--spacing-xlarge) 0;
 }
 
 .tooltip {
